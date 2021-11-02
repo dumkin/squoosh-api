@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  squoosh-api:
+    image: "squoosh-api:latest"
+    container_name: squoosh-api
+    restart: always
+    ports:
+      - 1041:1041
+    build:
+      context: .
+      dockerfile: Dockerfile
