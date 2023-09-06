@@ -1,7 +1,6 @@
 import express from 'express';
 import { ImagePool } from '@squoosh/lib';
 
-const host = '127.0.0.1';
 const port = 1041;
 
 const app = express();
@@ -90,5 +89,5 @@ app.post('/', async (req, res, next) => {
 });
 
 app.listen(port, () =>
-  console.log(`Example app listening on port ${port}!`),
+  console.log(`squoosh-api listening on port ${port}!`),
 );
